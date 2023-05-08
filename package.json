@@ -4,7 +4,7 @@
   "description": "Test Technique",
   "main": "index.js",
   "scripts": {
-    //"triggerAllTests-chrome": "npx cypress run --browser chrome"
+
   },
   "author": "Nath",
   "license": "ISC",
