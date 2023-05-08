@@ -13,8 +13,9 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v5
         with:
-          build: npm run
-          start: npm start
+          command : npx cypress run
+          #build: npm run
+          #start: npm start
           browser: chrome
           record: true
         env:
