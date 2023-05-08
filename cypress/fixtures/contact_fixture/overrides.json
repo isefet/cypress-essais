@@ -1,0 +1,36 @@
+    {
+        "Overrides" : {
+            "HappyPathAll": {
+                "oUser": [{"field" : "company","value" : "fake-company"}],
+                "oText" : [{"field" : "title" ,"value" : "fake-title"}]
+            },
+            "HappyPathMandatory": {
+                "oUser": [{"field" : "phone","value" : ""}],
+                "oText" : []
+            },
+            "HappyPathAllOther": {
+                "oUser": [{"field" : "company","value" : "fake-company"},{"field" : "gender" ,"value" : "other"}],
+                "oText" : [{"field" : "title" ,"value" : "fake-title"}]
+            },
+            "HappyPathMandatoryOther": {
+                "oUser": [{"field" : "phone","value" : ""},{"field" : "gender" ,"value" : "other"}],
+                "oText" : []
+            },
+            "UHappyPathMissedFirstName": {
+                "oUser": [{"field" : "firstName","value" : ""}],
+                "oText" : []
+            },
+            "UHappyPathMissedLastName": {
+                "oUser": [{"field" : "lastName","value" : ""},{"field" : "gender" ,"value" : "other"}],
+                "oText" : [{"field" : "title" ,"value" : "fake-title"}]
+            },
+            "UHappyPathMissedGender": {
+                "oUser": [{"field" : "gender","value" : ""},{"field" : "company","value" : "fake-company"},{"field" : "phone","value" : ""}],
+                "oText" : []
+            },
+            "UHappyPathMissedMessage": {
+                "oUser": [],
+                "oText" : [{"field" : "title" ,"value" : "fake-title"},{"field" : "texte" ,"value" : ""}]
+            }
+        }
+    }
